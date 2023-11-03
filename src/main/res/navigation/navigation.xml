@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/navigation_calculate">
+
+    <fragment
+        android:id="@+id/Fragment_calculator"
+        android:name="com.example.calculator.fragments.Fragment_calculator"
+        android:label="calculator"
+        tools:layout="@layout/fragment_calculator"
+        >
+        <action
+            android:id="@+id/action_Fragment_calculator_to_Fragment_percentage"
+            app:destination="@id/Fragment_percentage" />
+        <action
+            android:id="@+id/action_Fragment_calculator_to_Fragment_stopwatch"
+            app:destination="@id/Fragment_stopwatch" />
+        <action
+            android:id="@+id/action_Fragment_calculator_to_Fragment_timer"
+            app:destination="@id/Fragment_timer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment_percentage"
+        android:name="com.example.calculator.fragments.Fragment_percentage"
+        android:label="percentage"
+        tools:layout="@layout/fragment_percentage"
+        />
+
+    <fragment
+        android:id="@+id/Fragment_stopwatch"
+        android:name="com.example.calculator.fragments.Fragment_stopwatch"
+        android:label="stopwatch"
+        tools:layout="@layout/fragment_stopwatch"
+        />
+
+    <fragment
+        android:id="@+id/Fragment_timer"
+        android:name="com.example.calculator.fragments.Fragment_timer"
+        android:label="timer"
+        tools:layout="@layout/fragment_timer"
+        />
+
+
+
+</navigation>

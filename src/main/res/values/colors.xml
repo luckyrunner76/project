@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonGray">#59C1BD</color>
+<color name="buttonPressGray">#59C1BD</color>
+<color name="backgroundWhite">#fcfcfc</color>
+<color name="textColor">#425F57</color>
+<color name="green">#6D9886</color>
+<color name="yellow">#FFF59C</color>
+</resources>
